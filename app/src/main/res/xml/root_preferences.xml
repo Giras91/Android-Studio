@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="General">
+
+        <ListPreference
+            android:key="pref_theme"
+            android:title="Theme"
+            android:summary="Choose app theme"
+            android:entries="@array/theme_entries"
+            android:entryValues="@array/theme_values"
+            android:defaultValue="system" />
+
+        <SeekBarPreference
+            android:key="pref_font_size"
+            android:title="Font Size"
+            android:summary="Adjust reading font size"
+            android:max="30"
+            android:min="10"
+            android:defaultValue="16" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="URLs">
+
+        <Preference
+            android:key="pref_add_url"
+            android:title="Add URL"
+            android:summary="Add a new URL for sources" />
+
+        <Preference
+            android:key="pref_manage_urls"
+            android:title="Manage URLs"
+            android:summary="View and manage saved URLs" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="Exports">
+
+        <SwitchPreferenceCompat
+            android:key="mari_auto_export"
+            android:title="Automatically export downloads"
+            android:summary="If enabled, completed downloads will be copied to the selected external folder"
+            android:defaultValue="true" />
+
+        <Preference
+            android:key="pref_export_folder"
+            android:title="Configure export folder"
+            android:summary="Select a folder to export downloads (SAF)" />
+
+        <Preference
+            android:key="pref_clear_export"
+            android:title="Clear export folder"
+            android:summary="Remove saved export folder and permissions" />
+
+        <Preference
+            android:key="pref_view_worker_logs"
+            android:title="View worker logs"
+            android:summary="Open worker error logs written by background tasks" />
+
+        <Preference
+            android:key="pref_clear_worker_logs"
+            android:title="Clear worker logs"
+            android:summary="Delete stored worker logs from internal storage" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="About">
+
+        <Preference
+            android:key="pref_version"
+            android:title="Version"
+            android:summary="1.0" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="Updates">
+
+        <ListPreference
+            android:key="pref_update_interval"
+            android:title="Update Interval"
+            android:summary="How often to check for new chapters"
+            android:entries="@array/update_interval_entries"
+            android:entryValues="@array/update_interval_values"
+            android:defaultValue="3600000" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

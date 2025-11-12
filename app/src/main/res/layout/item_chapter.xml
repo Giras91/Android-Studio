@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp"
+    android:background="?android:attr/selectableItemBackground">
+
+    <TextView
+        android:id="@+id/title_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Chapter Title"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/number_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Chapter Number"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/read_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Read Status"
+        android:textSize="12sp" />
+
+</LinearLayout>
